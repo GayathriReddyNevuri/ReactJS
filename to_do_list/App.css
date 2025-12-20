@@ -1,0 +1,138 @@
+....App.css.....
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #dbeafe, #fef3c7);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 430px;
+  margin: 60px auto;
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #c7d2fe;
+  outline: none;
+}
+
+.input-box input:focus {
+  border-color: #6366f1;
+}
+
+.input-box button {
+  padding: 10px 14px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.input-box button:hover {
+  background: #4338ca;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.filters button {
+  flex: 1;
+  padding: 7px;
+  border-radius: 8px;
+  border: none;
+  background: #e0e7ff;
+  color: #1e3a8a;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background: #c7d2fe;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  background: #f8fafc;
+}
+
+li span {
+  cursor: pointer;
+}
+
+li.done {
+  background: #dcfce7;
+}
+
+li.done span {
+  text-decoration: line-through;
+  color: #065f46;
+}
+
+li button {
+  margin-left: 6px;
+  padding: 4px 8px;
+  font-size: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+li button:first-child {
+  background: #22c55e;
+  color: white;
+}
+
+li button:last-child {
+  background: #ef4444;
+  color: white;
+}
+
+.empty {
+  text-align: center;
+  color: #475569;
+  margin-top: 25px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 20px;
+  }
+}
